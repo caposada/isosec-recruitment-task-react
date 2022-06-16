@@ -11,7 +11,7 @@ export default function DrinksList({ cocktailName }) {
     }, [cocktailName]);
 
     return (
-        <div>
+        <div className="drinkslist">
             {
                 drinks.map((drink, index) => {
                     return (
