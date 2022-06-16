@@ -1,6 +1,6 @@
 import reactLogo from './logo.svg';
 import './App.css';
-import CocktailList from './components/CocktailList';
+import DrinksList from './components/DrinksList';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         The Cocktail App
       </header>
       <main>
-        <CocktailList />
+        <DrinksList cocktailName="margarita" />
       </main>
       <footer>
         Footer info
