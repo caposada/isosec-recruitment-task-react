@@ -6,20 +6,21 @@
 }
 
 .App-header {
+  font-size: 40px;
   background-color: white;
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .App-main {
 }
 
 .App-footer {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +28,7 @@
 
 .App-link {
   color: #0000ff;
+  margin-left: 5px;
 }
 
 .drinkslist {
@@ -113,6 +115,7 @@
   font-size: 25px;
   float: none;
   width: 100%;
+  text-align: center;
 }
 
 .drinkdetailed__instructions {
@@ -187,6 +190,10 @@
 
   .drinkitem__ingredient {
     font-size: 10px;
+  }
+
+  .drinkdetailed__thumnail {
+    height: 15%;
   }
 
   .drinkdetailed__name {
