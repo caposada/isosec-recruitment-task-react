@@ -1,4 +1,3 @@
-import reactLogo from './logo.svg';
 import './App.css';
 import DrinksList from './components/DrinksList';
 
