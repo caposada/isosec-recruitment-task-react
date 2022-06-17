@@ -11,7 +11,7 @@ function App() {
         <DrinksList cocktailName="margarita" />
       </main>
       <footer className="App-footer">
-        Data provided by<a className="App-link" href="https://www.thecocktaildb.com/">www.thecocktaildb.com</a>
+        Data provided by<a className="App-link" href="https://www.thecocktaildb.com/" target="_blank" rel="noreferrer">www.thecocktaildb.com</a>
       </footer>
     </div>
   );

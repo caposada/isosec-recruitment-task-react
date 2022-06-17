@@ -12,11 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   margin-bottom: 10px;
-}
-
-.App-main {
 }
 
 .App-footer {
@@ -98,6 +94,7 @@
 
 .drinkdetailed__name {
   font-size: 50px;
+  font-size: calc(10px + 2vmin);
   padding-right: 25px;
 }
 
@@ -105,10 +102,10 @@
   font-size: 30px;
 }
 
-.drinkdetailed__ingredients {
+.drinkdetailed__recipe {
   clear: left;
   overflow-y: auto;
-  height: 30%;
+  height: 65%;
 }
 
 .drinkdetailed__ingredient {
@@ -122,8 +119,6 @@
   font-size: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
-  overflow-y: auto;
-  height: 30%;
 }
 
 .closeButton {
@@ -180,10 +175,22 @@
     font-size: 20px;
   }
 
+  .drinkdetailed__recipe {
+    height: 65%;
+  }
+
 }
 
 @media only screen and (max-width: 450px) {
-  
+    
+  .App-header {
+    font-size: 20px;
+  }
+
+  .App-footer {
+    font-size: 10px;
+  }
+
   .drinkitem__name {
     font-size: 12px;
   }
@@ -203,4 +210,9 @@
   .drinkdetailed__alcoholic {
     font-size: 15px;
   }
+
+  .drinkdetailed__recipe {
+    height: 80%;
+  }
+
 }

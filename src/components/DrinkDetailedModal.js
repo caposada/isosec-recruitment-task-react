@@ -2,9 +2,7 @@ import { getRecipe } from "../helpers/utils";
 
 export default function DrinkDetailedModal({ drink, onClose }) {
 
-
     const recipe = getRecipe(drink);
-    console.log(recipe);
 
     return (
         <div className="drinkdetailed">
@@ -16,19 +14,21 @@ export default function DrinkDetailedModal({ drink, onClose }) {
             <div className="drinkdetailed__alcoholic">  
                 ({drink.strAlcoholic})  
             </div>
-            <div className="drinkdetailed__ingredients">
-                {
-                    recipe.map((ingredient, index) => {
-                        return (
-                            <div key={index} className="ingredient drinkdetailed__ingredient">
-                                <i>{ingredient}</i>
-                            </div>
-                        )
-                    })
-                }
-            </div>
-            <div className="drinkdetailed__instructions">
-                {drink.strInstructions}
+            <div className="drinkdetailed__recipe">
+                <div className="drinkdetailed__ingredients">
+                    {
+                        recipe.map((ingredient, index) => {
+                            return (
+                                <div key={index} className="ingredient drinkdetailed__ingredient">
+                                    <i>{ingredient}</i>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                <div className="drinkdetailed__instructions">
+                    {drink.strInstructions}
+                </div>
             </div>
         </div>
     )
