@@ -8,10 +8,10 @@ function App() {
       <header className="App-header">
         The Cocktail App
       </header>
-      <main>
+      <main className="App-main">
         <DrinksList cocktailName="margarita" />
       </main>
-      <footer>
+      <footer className="App-footer">
         Footer info
       </footer>
     </div>
