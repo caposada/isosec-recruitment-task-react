@@ -30,9 +30,9 @@
 }
 
 .drinkslist {
+  position: relative;
   width: 600px;
 }
-
 
 .drinkitem {
   padding: 5px;
@@ -69,6 +69,74 @@
 
 .drinkitem__ingredient {
   font-size: 15px;
+  float: left;
+}
+
+.drinkdetailed {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.drinkdetailed__thumnail {
+  float: left;
+  height: 30%;
+  border-radius: 5px;
+  border: 1px solid gray;
+  box-shadow: 3px 3px 5px gray ;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.drinkdetailed__name {
+  font-size: 50px;
+  padding-right: 25px;
+}
+
+.drinkdetailed__alcoholic {
+  font-size: 30px;
+}
+
+.drinkdetailed__ingredients {
+  clear: left;
+  overflow-y: auto;
+  height: 30%;
+}
+
+.drinkdetailed__ingredient {
+  font-size: 25px;
+  float: none;
+  width: 100%;
+}
+
+.drinkdetailed__instructions {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  height: 30%;
+}
+
+.closeButton {
+  font-size: 25px;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+  background-color: rgb(250, 250, 250);
+  cursor: pointer;
+}
+
+
+.ingredient {
   border-radius: 5px;
   border: 1px solid gray;
   box-shadow: 3px 3px 3px gray ;
@@ -79,12 +147,15 @@
   padding-left: 2px;
   padding-right: 2px;
   width: auto;
-  float: left;
 }
 
 .fade {
   -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent);
 }
+
+
+
+
 
 @media only screen and (max-width: 620px) {
   
@@ -98,6 +169,14 @@
     width: 100%;
   }
 
+  .drinkdetailed__name {
+    font-size: 30px;
+  }
+  
+  .drinkdetailed__alcoholic {
+    font-size: 20px;
+  }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -105,8 +184,16 @@
   .drinkitem__name {
     font-size: 12px;
   }
+
   .drinkitem__ingredient {
     font-size: 10px;
   }
 
+  .drinkdetailed__name {
+    font-size: 20px;
+  }
+  
+  .drinkdetailed__alcoholic {
+    font-size: 15px;
+  }
 }

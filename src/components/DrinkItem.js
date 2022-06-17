@@ -1,13 +1,11 @@
 import { getIngredients } from "../helpers/utils";
 
-export default function DrinkItem({ drink }) {
-
+export default function DrinkItem({ drink, itemClicked }) {
 
     const ingredients = getIngredients(drink);
-    console.log(ingredients);
 
     return (
-        <div className="drinkitem">
+        <div className="drinkitem" onClick={() => itemClicked(drink)}>
             <img className="drinkitem__thumnail" src={drink.strDrinkThumb} alt={`${drink.strDrink} cocktail`} />
             <div className="drinkitem__details fade">
                 <div className="drinkitem__name">            
@@ -15,9 +13,9 @@ export default function DrinkItem({ drink }) {
                 </div>
                 <div className="drinkitem__ingredients">
                     {
-                        ingredients.map((ingredient) => {
+                        ingredients.map((ingredient, index) => {
                             return (
-                                <div className="drinkitem__ingredient">
+                                <div key={index} className="ingredient drinkitem__ingredient">
                                     <i>{ingredient}</i>
                                 </div>
                             )
